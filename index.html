@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Boutique Fashionable</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Boutique Fashionable</h1>
+    <p class="slogan">Donde tu Flow se vuelva moda</p>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#productos">Productos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="bienvenida">
+      <h2>¡Bienvenida a tu boutique!</h2>
+      <p>Explora nuestra colección con estilo único y prendas exclusivas.</p>
+    </section>
+<section id="categorias">
+  <h2>Categorías</h2>
+  <div class="botones-categorias">
+    <button onclick="filtrarCategoria('ropa')">Ropa</button>
+    <button onclick="filtrarCategoria('accesorios')">Accesorios</button>
+    <button onclick="filtrarCategoria('ofertas')">Ofertas</button>
+   <!-- Botón para abrir el carrito -->
+<button id="ver-carrito" class="btn-carrito">
+  🛒 Ver carrito (<span id="contador-carrito">0</span>)
+</button>
+  </div>
+</section>
+<h2>Productos Destacados</h2>
+<div class="galeria">
+<div class="producto ropa">
+  <img src="imagenes/vestido rojo.jpeg" alt="Vestido rojo">
+  <p>Vestido rojo casual - Talla M</p>
+  <button class="btn-carrito" onclick="agregarAlCarrito('Vestido rojo casual')">Agregar al carrito</button>
+</div>
+<div class="producto ropa">
+  <img src="imagenes/sudadera negra.jpeg" alt="Sudadera negra">
+  <p>Sudadera negra - Talla M</p>
+  <button class="btn-carrito" onclick="agregarAlCarrito('Sudadera negra')">Agregar al carrito</button>
+</div>
+<div class="producto ropa">
+  <img src="imagenes/sudadera negra con dibujo plasmado.jpeg" alt="Sudadera negra">
+  <p>Sudadera negra - Talla M</p>
+  <button class="btn-carrito" onclick="agregarAlCarrito('Sudadera negra')">Agregar al carrito</button>
+</div>
+<div class="producto ropa">
+  <img src="imagenes/Shorts deportivos.jpeg" alt="Shorts Deportivos">
+  <p>Shorts Deportivos para Hombres Diferentes colores - Talla M</p>
+  <button class="btn-carrito" onclick="agregarAlCarrito('Shorts Deportivos')">Agregar al carrito</button>
+</div>
+<div class="producto ropa">
+  <img src="imagenes/playera rosa mujer.jpeg" alt="Playera Rosa">
+  <p>Playera Rosa Para mujer - Talla M</p>
+  <button class="btn-carrito" onclick="agregarAlCarrito('Playera Rosa')">Agregar al carrito</button>
+</div>
+<div class="producto ropa">
+  <img src="imagenes/playera lila hombre.jpeg" alt="playera lila">
+  <p>Playera lila para Hombre - Talla G y M</p>
+  <button class="btn-carrito" onclick="agregarAlCarrito('Playera lila')">Agregar al carrito</button>
+</div>
+<div class="producto ropa">
+  <img src="imagenes/pantalon mezclilla azul.jpeg" alt="Pantalon mezclilla azul">
+  <p>Pantalon mezclilla Azul para Mujer - Talla 5, 6 y 7</p>
+  <button class="btn-carrito" onclick="agregarAlCarrito('Pantalon de mezclilla')">Agregar al carrito</button>
+</div>
+<div class="producto ropa">
+  <img src="imagenes/pantalon cafe mujer.jpeg" alt="Pantalon cafe mujer">
+  <p>Pantalon cafe para mujer - Talla 5, 6 y 7</p>
+  <button class="btn-carrito" onclick="agregarAlCarrito('Pantalon cafe')">Agregar al carrito</button>
+</div>
+<div class="producto ropa">
+  <img src="imagenes/juegos de pans para mujrer.jpeg" alt=" Juegos de Pants">
+  <p>Juegos de Pants Diferentes Colores- Talla 5, 6 y 7</p>
+  <button class="btn-carrito" onclick="agregarAlCarrito('Juegos de Pants')">Agregar al carrito</button>
+</div>
+<div class="producto ropa">
+  <img src="imagenes/Conjunto para hombre color negro.jpeg" alt="Conjunto para Hombre">
+  <p>Conjunto para Hombre Colo Negro - Talla M y G</p>
+  <button class="btn-carrito" onclick="agregarAlCarrito('Vestido rojo casual')">Agregar al carrito</button>
+</div>
+<div class="producto ropa">
+  <img src="imagenes/conjunto de pans hombre.jpeg" alt="Conjunto de Pants">
+  <p>Conjunto de Pants para Hombre- Talla M y G</p>
+  <button class="btn-carrito" onclick="agregarAlCarrito('Conjunto de Pants')">Agregar al carrito</button>
+</div>
+<div class="producto ropa">
+  <img src="imagenes/chamarra blanca.jpeg" alt="Chamarra Blanca">
+  <p>Chamarra Blanca - Talla CH, M y G</p>
+  <button class="btn-carrito" onclick="agregarAlCarrito('Chamarra Blanca')">Agregar al carrito</button>
+</div>
+<div class="producto ropa">
+  <img src="imagenes/chamarra blanca con franjas negras.jpeg" alt="Chamarra Blanca con franjas negras">
+  <p>Chamarra Blanca con franjas negras - Talla CH, M y G</p>
+  <button class="btn-carrito" onclick="agregarAlCarrito('Chamarra Blanca con franjas negras')">Agregar al carrito</button>
+</div>
+<div class="producto ropa">
+  <img src="imagenes/Blusa manga larga color verde.jpeg" alt="Blusa manga larga">
+  <p>Blusa manga larga Color Verde para Mujer- Talla CH, M y G</p>
+  <button class="btn-carrito" onclick="agregarAlCarrito('Blusa manga larga')">Agregar al carrito</button>
+</div>
+<div class="producto ropa">
+  <img src="imagenes/Blusa manga larga blanca.jpeg" alt="Blusa manga larga">
+  <p>Blusa manga larga Color Blanco Para Mujer - Talla CH, M y G</p>
+  <button class="btn-carrito" onclick="agregarAlCarrito('Vestido rojo casual')">Agregar al carrito</button>
+</div>
+    <section id="productos">
+      <h2>Nuestros Productos</h2>
+      <div class="galeria">
+        <div class="producto">
+          <img src="imagenes/vestido rojo.jpeg" alt="Vestido rojo">
+          <p>Vestido rojo casual - Talla M</p>
+        </div>
+        <div class="producto">
+          <img src="imagenes/sudadera negra.jpeg" alt="Sudadera negra">
+          <p>Sudadera negra - Talla M</p>
+        </div>
+        <div class="producto">
+          <img src="imagenes/sudadera negra con dibujo plasmado.jpeg" alt="sudadera negra">
+          <p>sudadera negra- Talla M</p>
+        </div>
+      </div class="producto">
+        <img src="imagenes/Shorts deportivos.jpeg" alt="Shorts Deportivos">
+        <p>Shorts Deportivos para Hombres Diferentes colores- Talla M</p>
+        </div>
+        </div class="producto">
+        <img src="imagenes/playera rosa mujer.jpeg" alt="Playera Rosa">
+         <p>Playera Rosa para Mujer- Talla M</p>
+          </div>
+           </div class="producto">
+        <img src="imagenes/playera lila hombre.jpeg" alt="Playera lila">
+        <p>Playera lila para Hombres- Talla G y M</p>
+        </div>
+</div class="producto">
+        <img src="imagenes/pantalon mezclilla azul.jpeg" alt="Pantalon mezclilla Azul">
+        <p>Pantalon mezclilla Azul para Mujer- Talla 5,6 y7</p>
+        </div>
+        </div class="producto">
+        <img src="imagenes/pantalon cafe mujer.jpeg" alt="Pantalon cafe">
+        <p>Pantalon cafe para Mujer- Talla 5,6 y7</p>
+         </div>
+  </div class="producto">
+        <img src="imagenes/juegos de pans para mujrer.jpeg" alt="Juegos de Pants">
+        <p> Juego de Pants Diferentes colores - Talla 5,6 y7</p>
+         </div>
+         </div class="producto">
+        <img src="imagenes/Conjunto para hombre color negro.jpeg" alt=" Conjunto para Hombre">
+        <p> Conjunto para Hombre Color negro- Talla M y G</p>
+         </div>
+          </div class="producto">
+        <img src="imagenes/conjunto de pans hombre.jpeg" alt=" Conjunto de Pants">
+        <p> Conjunto de Pants para Hombre- Talla M y G</p>
+         </div>
+            </div class="producto">
+        <img src="imagenes/chamarra blanca.jpeg" alt=" Chamarra Blanca">
+        <p> Chamarra Blanca- Talla CH, M y G</p>
+         </div>
+            </div class="producto">
+        <img src="imagenes/chamarra blanca con franjas negras.jpeg" alt=" Chamarra Blanca con franjas negras">
+        <p> Chamarra Blanca con franjas negras- Talla CH, M y G</p>
+         </div>
+          </div class="producto">
+        <img src="imagenes/Blusa manga larga color verde.jpeg" alt=" Blusa manga larga">
+        <p> Blusa manga larga Color Verde Para Mujer- Talla CH, M y G</p>
+         </div>
+          </div class="producto">
+        <img src="imagenes/Blusa manga larga blanca.jpeg" alt=" Blusa manga larga">
+        <p> Blusa manga larga Color Blanca Para Mujer- Talla CH, M y G</p>
+         </div>
+           </div>
+    </section>
+
+    <section id="contacto">
+      <h2>Contáctanos</h2>
+      <p><strong>WhatsApp:</strong> <a href="https://wa.me/525565134168" target="_blank">5565134168</a></p>
+      <p><strong>Instagram:</strong> <a href="https://instagram.com/linares_xlx" target="_blank">@linares_xlx</a></p>
+      <p><strong>Dirección:</strong> Calle Boutique Ejemplo #123, Ciudad de Moda, México</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Boutique Fashionable. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+<!-- Botón para ver el carrito -->
+<button id="ver-carrito" class="btn-carrito">
+  🛒 Ver carrito (<span id="contador-carrito">0</span>)
+</button>
+
+<!-- Contenedor del carrito que se muestra al presionar el botón -->
+<div id="carrito-contenedor" style="display: none; position: fixed; top: 100px; right: 20px; background: white; border: 1px solid #ccc; padding: 15px; z-index: 999;">
+  <h3>Productos en el carrito</h3>
+  <ul id="lista-carrito"></ul>
+  <button id="cerrar-carrito">Cerrar</button>
+</div>
+<div id="carrito-contenedor" style="display: none;">
+  <h2>Productos en el carrito</h2>
+  <ul id="lista-carrito"></ul>
+  <button id="cerrar-carrito">Cerrar</button>
+</div>
+</html>

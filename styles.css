@@ -1,0 +1,159 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff0f5;
+  color: #333;
+}
+
+header {
+  background-color: #f8bbd0;
+  color: #fff;
+  text-align: center;
+  padding: 25px 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.slogan {
+  font-style: italic;
+  margin-top: -10px;
+  font-size: 1.1em;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  margin: 0 12px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffeef4;
+}
+
+main {
+  padding: 20px;
+}
+
+h2 {
+  color: #e91e63;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+  gap: 20px;
+  padding: 20px;
+}
+
+.producto {
+  border: 1px solid #ddd;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.producto:hover {
+  transform: scale(1.05);
+}
+
+.producto img {
+  width: 100%;
+  max-width: 140px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  transition: transform 0.3s ease;
+}
+
+.producto p {
+  margin: 8px 0;
+}
+
+.producto button {
+  padding: 6px 12px;
+  background-color: #f06292;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.producto button:hover {
+  background-color: #d81b60;
+}
+footer {
+  background-color: #f8bbd0;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+.botones-categorias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.botones-categorias button {
+  padding: 10px 15px;
+  background-color: #f06292;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.botones-categorias button:hover,
+.btn-carrito:hover {
+  background-color: #e91e63;
+}
+
+.btn-carrito {
+  margin-top: 10px;
+  background-color: #f48fb1;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+/* Responsive: para que se vea bien en celular */
+@media screen and (max-width: 600px) {
+  .producto {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .botones-categorias {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.producto img {
+  transition: transform 0.3s ease;
+}
+
+.producto img:hover {
+  transform: scale(1.1);
+}
